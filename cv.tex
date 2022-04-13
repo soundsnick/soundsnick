@@ -1,0 +1,223 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.775in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\inDescItem}[1]{
+ \item\small{
+   {#1\vspace{-3pt}}
+ }
+}
+
+\newcommand{\inDescListStart}{\begin{itemize}[leftmargin=*]\vspace{-3pt}}
+\newcommand{\inDescListEnd}{\end{itemize}\vspace{-8pt}}
+
+
+\newcommand{\resumeAltSubheading}[4]{
+  \vspace{5.5pt}
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+
+}
+
+\newcommand{\projectItem}[3]{
+    \inDescItem{\textbf{\href{#1}{#2\linkicon}}: #3}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={}, leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\linkicon}{ \small\faicon{link}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/askarovich/}{\Large Yernazar Karabayev}} &  
+  \href{https://www.linkedin.com/in/askarovich/}{askarovich \faicon{linkedin}}\\
+  \href{mailto:soundsnick@gmail.com}{soundsnick@gmail.com} &
+  \href{https://github.com/soundsnick}{soundsnick \faicon{github}}
+\end{tabular*}
+
+
+
+%-----------EXPERIENCE-----------------
+
+\section{Experience}\vspace{-5pt}
+  \resumeAltSubheading
+  {\href{https://sber.kz/}{Sber Kazakhstan\linkicon}}
+      {Almaty, Kazakhstan}
+      {Lead Frontend Developer: \textbf{Internal infrastructure}}
+      {February 2022 - Present}
+    \inDescListStart
+        \inDescItem{Implementing a microfrontend for the entire internal banking system projects.}
+            \inDescListStart
+                \inDescItem{Adjusted the whole architecture from zero. Monorepo with design-system}
+                \inDescItem{Used Webpack 5 with its module federation, lerna, Storybook UI, React v18}
+            \inDescListEnd
+        \inDescItem{Mentored other developers, adjusted whole frontend team development workflow, code review.}
+   \inDescListEnd
+  
+  \resumeAltSubheading
+  {\href{https://incraft.org/}{InCraft/Bilim Media Group}}
+  {Almaty, Kazakhstan}
+  {Frontend developer: \textbf{Accounting platform}}
+  {Feb 2021 - Aug 2021}
+    \inDescListStart
+        \inDescItem{Built an accounting system for educational organizations. }
+            \inDescListStart
+                \inDescItem{Implemented a design system, for flexible development/testing of a components.}
+                \inDescItem{Came in with fresh views and approaches, made them work. Mentored other developers}
+                \inDescItem{Used React, Storybook UI, Webpack.}
+            \inDescListEnd
+   \inDescListEnd
+ 
+  \resumeAltSubheading
+    {\href{https://alabs.team}{Azimut Labs\linkicon}}
+    {Almaty, Kazakhstan}
+    {Frontend Developer: \textbf{Tele2 and Altel projects}}
+    {June 2020 - Dec 2020}
+    \inDescListStart
+        \inDescItem{Design system.}
+            \inDescListStart
+                \inDescItem{Implemented a number of components for design-system.}
+                \inDescItem{Used React, Typescript, EmotionJs, ESLint.}
+            \inDescListEnd
+        \inDescItem{Implemented several pages integrated with Backend.}
+            \inDescListStart
+                \inDescItem{Got into server-side rendering approach of web-application development.}
+                \inDescItem{Used React, NextJS, Typescript, EmotionJs, GraphQL with Apollo.}
+            \inDescListEnd
+   \inDescListEnd
+   
+  \resumeAltSubheading
+    {\href{https://xn----7sbbb7bbx7alc6h.xn--p1ai/}{ Krasnodar Web-studio\linkicon}}
+    {Krasnodar, Russia}
+    {Fullstack developer: \textbf{Freelance}}
+    {Feb 2015 - May 2019}
+    \inDescListStart
+        \inDescItem{Worked on a several projects.}
+            \inDescListStart
+                \inDescItem{Developed a number of websites for a clients.}
+                \inDescItem{Used Ruby on Rails, Golang, PHP.}
+            \inDescListEnd
+   \inDescListEnd
+
+%-----------ACHIEVEMENTS-----------------
+
+\section{Achievements}\vspace{-4pt}
+    \resumeAltSubheading
+    {Hackday 2018 Participant}
+    {Almaty, Kazakhstan}
+    {Hackday}
+    {December 2018}
+     \inDescListStart
+        \inDescItem{Created an MVP of professor ranking system on Ruby on Rails and VueJs. Integrated with an University education management system}
+      \inDescListEnd
+      
+    \resumeAltSubheading
+    {HackNU 2021 2nd place winner}
+    {Almaty, Kazakhstan}
+    {HackNU}
+    {December 2018}
+     \inDescListStart
+        \inDescItem{Created frontend for ML based system for detecting student talents, then matching appropriate professions for him, and sharing an information about universities to applicate}
+      \inDescListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+ \inDescListStart
+  \projectItem{OnBoarding.kz [in-progress]}{Building a platform for an automation of the new employee onboarding process.}
+  \projectItem{https://ifkz.org}{ifkz.org}{Web resource accessibility checking platform. Used React/Vue, Ruby on Rails, Golang, Docker}
+ 
+ \inDescListEnd
+  \resumeSubHeadingListStart
+  \resumeSubItem{\href{}{\color{blue}}}
+      {}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+
+\section{Education}\vspace{-4pt}
+  \resumeAltSubheading
+  {International IT University}
+  {Almaty, Kazakhstan}
+  {Unfinished Bachelor of Science in Computer Science;}
+  {September. 2018 -- March. 2022}
+
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \inDescListStart
+    \inDescItem{
+     \textbf{Languages}{: JS/TS, Golang, Ruby, HTML, CSS}
+    }
+    \inDescItem{
+    \textbf{Technologies}{: React, Vue, NextJS, Webpack, babel, lerna, Storybook UI, Sass/Scss, EmotionJs/styled components, PostgreSQL/MySQL, MongoDB, Docker/Docker compose, Linux, Postman}}
+ \inDescListEnd
+
+
+%-------------------------------------------
+\end{document}
